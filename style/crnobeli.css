@@ -1,0 +1,350 @@
+/*Sat Strana*/
+#crnobeli{
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#crnobeli .box{
+    justify-self: center;
+}
+#crnobeli form{
+    justify-self: left;
+    align-self: center;
+    width: 400px;
+}
+.sirina{
+    width: 100%;
+    height: 23px;
+}
+.uze{
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+}
+#input{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1em;
+}
+.slike{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    grid-gap: 10px;
+}
+.slike img{
+    width: 250px;
+    height: 250px;
+}
+.slike img:hover{
+    transform: scale(1.03);
+}
+
+/*INFO*/
+#inf{
+    text-align: center;
+    padding: 5px;
+    
+    width: 1000px;
+    margin: auto;
+}
+#inf ul{
+    border-bottom: 2px solid black;
+}
+#inf li{
+    padding: 10px;
+    margin: 0px 40px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+#inf p{
+    padding: 0px 40px;
+}
+#inf li a:hover{
+    background-color: silver;
+}
+#inf li .activee{
+    color: silver;
+}
+#inf a{
+    text-decoration: none;
+    color: black;
+}
+#demo{
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+#inf p{
+    text-align: left;
+}
+
+/*SLIDE ZA SAT*/
+.mywatch {display: none}
+
+#crnobeli img {vertical-align: middle;
+     width: 400px;
+     margin: 0px 125px;
+}
+
+
+.slideshow-container {
+  max-width: 650px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+    
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dott {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dott:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 375px) {
+    #logo a{
+    font-size: 1.1em;
+    }
+    #logo img{
+        width: 25px;
+    }
+    #logo{
+        padding-bottom: 5px;
+    }
+    nav li{
+        font-size: 0.8em;
+    }
+/*    Contact*/
+    .conkon{
+        font-size: 1.2em;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    #crnobeli{
+        grid-template-columns: 1fr;
+        width: 800px;
+        margin: auto;
+    }
+    #crnobeli form{
+        justify-self: center;
+    }
+    .slideshow-container{
+        width: 800px;
+        margin: auto;
+        justify-self: center;
+    }
+    #crnobeli img{
+        width: 400px;
+        margin: 0px;
+/*        margin: 0px 200px;*/
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1000px) {
+    #crnobeli{
+        grid-template-columns: 1fr;
+        width: 560px;
+        margin: auto;
+    }
+    #crnobeli form{
+        justify-self: center;
+    }
+    .slideshow-container{
+        width: 560px;
+        margin: auto;
+        justify-self: center;
+    }
+    #crnobeli img{
+        width: 250px;
+        margin: 0px;
+/*        margin: 0px 150px;*/
+    }
+    
+    
+    #inf{
+        max-width: 400px;
+    }
+    #inf li{
+        width: 200px;
+        display: inherit;
+        margin: auto;
+        padding: 0px;
+    }
+    #inf ul{
+        width: 200px;
+        border-bottom: none;
+        margin: auto;
+        padding: 0px;
+    }
+}
+
+/* Small devices (Mobile L) */
+@media only screen and (max-width: 565px) {
+    #crnobeli{
+        grid-template-columns: 1fr;
+        width: 300px;
+        margin: auto;
+    }
+    #crnobeli form{
+        justify-self: center;
+    }
+    .slideshow-container{
+        width: 300px;
+        margin: auto;
+        justify-self: center;
+    }
+    #crnobeli img{
+        width: 200px;
+        margin: 0px;
+    }
+    
+    #crnobeli form{
+        justify-self: left;
+        align-self: center;
+        width: 300px;
+    }
+    #inf{
+        width: 300px;
+    }
+	#inf p{
+		padding: 0px 25px;
+	}
+    #demo{
+        padding: 0px;
+    }
+    .nsata{
+        font-size: 17px;
+    }
+    form .sirina{
+        width: 290px;
+    }
+    .uze{
+        width: 290px;
+    }
+    #inf ul{
+    border-bottom: 2px solid black;
+    }
+    #inf li{
+        padding: 10px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 1em;
+    }
+}
+
+/* Extra small devices (phones, max-375px and down) */
+@media only screen and (max-width: 315px) {
+    #crnobeli{
+        grid-template-columns: 1fr;
+        width: 250px;
+        margin: auto;
+    }
+    #crnobeli form{
+        justify-self: center;
+    }
+    .slideshow-container{
+        width: 250px;
+        margin: auto;
+        justify-self: center;
+    }
+    #crnobeli img{
+        width: 150px;
+        margin: 0px;
+    }
+    
+    #crnobeli form{
+        justify-self: left;
+        align-self: center;
+        width: 250px;
+    }
+    #inf{
+        width: 250px;
+    }
+    #demo{
+        padding: 0px;
+    }
+    .nsata{
+        font-size: 17px;
+    }
+    form .sirina{
+        width: 250px;
+    }
+    .uze{
+        width: 250px;
+    }
+    #inf ul{
+    border-bottom: 2px solid black;
+    }
+    #inf li{
+        padding: 10px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 1em;
+    }
+}

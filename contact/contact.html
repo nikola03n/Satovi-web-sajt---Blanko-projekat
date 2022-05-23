@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Tagovi za SEO-->
+    <meta name="description" content="Opis za meta">
+    <meta name="keywords" content="Kljucne reci koje se vise i ne koriste na ovaj nacin">
+<!--Naslov i slicica-->
+    <title>Naziv Brenda</title>
+    <link rel="icon" href="img/logotitle.jpg">
+<!--Ikonice-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+<!--Style-->
+    <link rel="stylesheet" href="../style/style.css">
+	<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+<style>
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .sir{
+        height: 100px;
+    }
+    #input{
+        background-color: green;
+    }
+</style>
+</head>
+<body>
+<!--HEADER-->
+<header>
+    <a href="../index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
+
+    <a href="index.html" id="nazivsajta">Naziv Brenda</a>
+
+    <span id="toggle" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+    <nav>
+       <ul>
+           <li><a href="../index.html">Početna</a></li>
+           <li><a href="../onama.html">O nama</a></li>
+           <li><a href="../satovi.html">Satovi</a></li>
+           <li><a href="../galerija.html">Galerija</a></li>
+           <li><a href="#">Kontakt</a></li>
+       </ul>
+    </nav>
+
+    <img class="covermobile" src="../img/cover-m.jpg" alt="cover">
+
+    <img class="covercomp" src="../img/cover.jpg" alt="cover">
+
+    <div id="menu">
+        <a href="#">Pocetna</a>
+        <a href="onama.html">O nama</a>
+        <a href="#">Satovi</a>
+        <a href="#">Galerija</a>
+    </div>
+</header>
+<!--END HEADER-->
+    
+<div class="container">
+  <form method="post" name="myemailform" action="form-to-email.php">
+            <p>
+                <label for='name'>Ime i Prezime: </label><br>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label for='email'>Email Adresa:</label><br>
+                <input type="text" name="email">
+            </p>
+            <p>
+                <label for='message'>Tekst poruke:</label> <br>
+                <textarea class="sir" name="message"></textarea>
+            </p>
+            <input id="input" type="submit" name='submit' value="Pošalji">
+        </form> 
+</div>
+
+<!--FOOTER-->
+<footer>
+   <div id="footer">
+       <div class="kategorija zakomp">
+           <a href="../index.html">Početna</a>
+           <a href="../onama.html">O nama</a>
+           <a href="../satovi.html">Muški satovi</a>
+           <a href="../satovi.html">Ženski satovi</a>
+           <a href="../galerija.html">Galerija</a>
+           <a href="#">Kontakt</a>
+       </div>
+       <!--SOCIAL LINKS-->
+      <div class="social-links">
+          <div class="link">
+              <a href="https://www.facebook.com/NazivBrenda/"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="link">
+              <a href="https://www.instagram.com/NazivBrenda/"><i class="fab fa-instagram"></i></a>
+          </div>
+       </div>
+    <!--END SOCIAL LINKS-->
+       <div class="kategorija">
+           <a href="../kakokupiti.html">Kako platiti</a>
+           <a href="../aktiviranjeibaterija.html">Aktiviranje i baterija sata</a>
+           <a href="../garancija.html">Garancija</a>
+           <a href="../servis.html">Servis</a>
+           <a href="../reklamacija.html">Reklamacija</a>
+           <a href="../zamena-odustajanje.html">Zamena i povraćaj novca</a>
+       </div>
+   </div>
+   
+   <div class="copyright">
+       <center><p>Naziv Brenda</p></center>
+       <center><p>Nikola's Web Design, Copyright &copy; 2020</p></center>
+   </div>
+</footer>
+<!--END FOOTER-->
+<script src="../toggle.js"></script>
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+</body>
+</html>

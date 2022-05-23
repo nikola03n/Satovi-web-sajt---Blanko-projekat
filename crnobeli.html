@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Tagovi za SEO-->
+    <meta name="description" content="Opis za meta">
+    <meta name="keywords" content="Kljucne reci koje se vise i ne koriste na ovaj nacin">
+<!--Naslov i slicica-->
+    <title>Naziv Brenda - Ime sata</title>
+    <link rel="icon" href="img/logotitle.jpg">
+<!--Ikonice-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+<!--Style-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/crnobeli.css">
+</head>
+<body>
+<!--HEADER-->
+<header>
+    <a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
+
+    <a href="index.html" id="nazivsajta">Naziv Brenda</a>
+
+    <span id="toggle" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+    <nav>
+       <ul>
+           <li><a href="index.html">Početna</a></li>
+           <li><a href="onama.html">O nama</a></li>
+           <li><a href="#muskizenski">Satovi</a></li>
+           <li><a href="galerija.html">Galerija</a></li>
+           <li><a href="contact/contact.html">Kontakt</a></li>
+       </ul>
+    </nav>
+
+    <img class="covermobile" src="img/cover-m.jpg" alt="cover">
+
+    <img class="covercomp" src="img/cover.jpg" alt="cover">
+
+    <div id="menu">
+        <a href="index.html">Početna</a>
+        <a href="onama.html">O nama</a>
+        <a href="satovi.html">Muški satovi</a>
+        <a href="satovi.html">Ženski satovi</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="contact/contact.html">Kontakt</a>
+    </div>
+</header>
+<!--END HEADER-->
+
+<!--Main-->
+<main>
+    <!--BLACKWHITE CSS-->
+    <section id="crnobeli">
+        <div class="slideshow-container">
+
+            <div class="mywatch fade">
+              <div class="numbertext">1 / 2</div>
+              <center><img src="img/satstr/crnobeli.jpg" style=""></center>
+            </div>
+
+            <div class="mywatch fade">
+              <div class="numbertext">2 / 2</div>
+              <center><img src="img/satstr/crnobeli2.jpg" style=""></center>
+            </div>
+            
+            <br>
+
+            <div style="text-align:center">
+              <span class="dott" onclick="currentSlide(1)"></span> 
+              <span class="dott" onclick="currentSlide(2)"></span>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+       
+        <form method="post" name="myemailform" action="form-to-email.php">
+            <h1 class="nsata"><i>Naziv Brenda - Ime sata</i></h1>
+            <p>
+                <label for='name'>Ime i Prezime: </label><br>
+                <input class="sirina" type="text" name="name">
+            </p>
+            <p>
+                <label for='email'>Email Adresa:</label><br>
+                <input class="sirina" type="text" name="email">
+            </p>
+            <p>
+                <label for='message'>Adresa stanovanja:</label> <br>
+                <textarea class="sirina" name="message"></textarea>
+            </p>
+			<p>
+                <label for='fon'>Broj telefona:</label> <br>
+                <textarea class="sirina" name="fon"></textarea>
+            </p>
+
+            <button class="uze" id="input" type="submit" name='submit' value="submit">Naruči i Kupi</button>
+        </form> 
+    </section>
+       
+    <div id="inf">
+            <ul>
+                <li><a class="details" onclick='document.getElementById("demo").innerHTML = "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vero nulla totam velit odit veritatis saepe, ducimus facere numquam ea exercitationem itaque repellendus perspiciatis, eius dicta sequi, repudiandae omnis dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti voluptatum doloribus delectus suscipit commodi distinctio mollitia sed corporis. Veniam quisquam dignissimos sit! Harum ullam dignissimos quibusdam maxime quis exercitationem.</p>"' href="#">Detalji</a></li>
+                <li><a onclick='document.getElementById("demo").innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vero nulla totam velit odit veritatis saepe, ducimus facere numquam ea exercitationem itaque repellendus perspiciatis, eius dicta sequi, repudiandae omnis dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti voluptatum doloribus delectus suscipit commodi distinctio mollitia sed corporis. Veniam quisquam dignissimos sit! Harum ullam dignissimos quibusdam maxime quis exercitationem."' href="#">Isporuka</a></li>
+                <li><a onclick='document.getElementById("demo").innerHTML = "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vero nulla totam velit odit veritatis saepe, ducimus facere numquam ea exercitationem itaque repellendus perspiciatis, eius dicta sequi, repudiandae omnis dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti voluptatum doloribus delectus suscipit commodi distinctio mollitia sed corporis. Veniam quisquam dignissimos sit! Harum ullam dignissimos quibusdam maxime quis exercitationem.</p>"' href="#">Garancija</a></li>
+                
+                <li><a class="details" onclick="location.href='galerija.html';" href="#">Galerija</a></li>
+            </ul>
+            
+            <br>
+           <div id="demo">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vero nulla totam velit odit veritatis saepe, ducimus facere numquam ea exercitationem itaque repellendus perspiciatis, eius dicta sequi, repudiandae omnis dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti voluptatum doloribus delectus suscipit commodi distinctio mollitia sed corporis. Veniam quisquam dignissimos sit! Harum ullam dignissimos quibusdam maxime quis exercitationem.</p>
+           </div> 
+    </div>
+<!--END BLACKWHITE CSS-->
+</main>
+<!--END MAIN-->
+
+<!--FOOTER-->
+<footer>
+   <div id="footer">
+       <div class="kategorija zakomp">
+        <a href="index.html">Početna</a>
+        <a href="onama.html">O nama</a>
+        <a href="satovi.html">Muški satovi</a>
+        <a href="satovi.html">Ženski satovi</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="contact/contact.html">Kontakt</a>
+       </div>
+       <!--SOCIAL LINKS-->
+      <div class="social-links">
+          <div class="link">
+              <a href="https://www.facebook.com/nn/"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="link">
+              <a href="https://www.instagram.com/nn/"><i class="fab fa-instagram"></i></a>
+          </div>
+       </div>
+    <!--END SOCIAL LINKS-->
+       <div class="kategorija">
+           <a href="kakokupiti.html">Kako platiti</a>
+           <a href="aktiviranjeibaterija.html">Aktiviranje i baterija sata</a>
+           <a href="garancija.html">Garancija</a>
+           <a href="servis.html">Servis</a>
+           <a href="reklamacija.html">Reklamacija</a>
+           <a href="zamena-odustajanje.html">Zamena i povraćaj novca</a>
+       </div>
+   </div>
+   
+   <div class="copyright">
+       <center><p>Naziv Brenda</p></center>
+       <center><p>Nikola's Web Design, Copyright &copy; 2020</p></center>
+   </div>
+</footer>
+<!--END FOOTER-->
+<script src="toggle.js"></script>
+<script src="index.js"></script>
+<!-- a helper script for vaidating the form-->
+    <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+<script language="JavaScript">
+    // Code for validating the form
+    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+    // for details
+    var frmvalidator  = new Validator("myemailform");
+    frmvalidator.addValidation("name","req","Please provide your name"); 
+    frmvalidator.addValidation("email","req","Please provide your email"); 
+    frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+    
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mywatch");
+      var dots = document.getElementsByClassName("dott");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+</body>
+</html>

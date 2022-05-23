@@ -1,0 +1,357 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    font-family: 'Jost', sans-serif;
+}
+.container{
+    width: 68%;
+    margin: auto;
+}
+.covercomp{
+    display: block;
+    width: 100%;
+    height: auto;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 89% 91%, 50% 100%, 11% 91%, 0 100%);
+}
+.covermobile{
+    display: none;
+}
+
+/*Header*/
+#logo{
+    display: none;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    z-index: 1;
+}
+.logoo{
+    width: 49px;
+    margin-top: 10px;
+}
+#nazivsajta{
+    display: block;;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 1.6em;
+    text-decoration: none;
+    font-weight: 560;
+    color: white;
+    z-index: 1;
+    padding: 8px;
+}
+nav{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    z-index: 1;
+}
+header li{
+    display: inline-block;
+    padding: 10px;
+}
+header li:hover{
+    background-color: darkblue;
+}
+header li a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+}
+#toggle{
+    display: none;
+}
+#menu{
+    display: none;
+}
+
+/*Main*/
+#pocetnitekst{
+    padding: 30px 20px;
+    font-size: 19px;
+    text-align: center;
+}
+.formatteksta{
+    text-align: left!important;
+}
+#muskizenski{
+    display: flex;
+}
+.muski, .zenski{
+    position: relative;
+    cursor: pointer;
+}
+.muski img, .zenski img{
+    width: 98%;
+    height: auto;
+    clip-path: none;
+}
+.muski img{
+    margin-right: 2%;
+}
+.zenski img{
+    margin-left: 2%;
+}
+.muski button, .zenski button{
+    position: absolute;
+    top: 3px;
+    width: 80%;
+    margin: 0 10%;
+
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #00002f;
+    opacity: 0.6;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+/*SOCIAL LINKS*/
+.social-links {
+    text-align: center;
+/*    padding: 30px 0px;*/
+    margin-top: 30px;
+    display: flex;
+}
+.social-links .link {
+/*    display: inline-block;*/
+    margin: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    height: 55px;
+    width: 55px;
+    border: 3px solid transparent;
+    transition: border 0.4s, color 0.4s;
+}
+.social-links .link:hover {
+    border: 3px solid blue;
+}
+.social-links .link a {
+    display: block;
+    padding: 20px;
+}
+/*Naslovi*/
+    main h1{
+        margin-top: 15px;
+    }
+
+/*Galerija strana*/
+.galerija-strana{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+.galerija-strana img{
+    width: 20%;
+    height: auto;
+    margin: 5px;
+    cursor: zoom-in;
+}
+.galerija-strana img:hover{
+    transform: scale(2);
+}
+
+/*Footer*/
+footer{
+    background-image: url(../img/footer.jpg);
+    display: cover;
+    color: white;
+    text-align: center;
+    clip-path: polygon(50% 0%, 89% 9%, 100% 0, 100% 100%, 0 100%, 0 0, 11% 9%);
+    margin-top: 50px;
+    padding-top: 10px;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-left: 120px;
+}
+#footer a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.09em;
+    
+}
+.copyright{
+    font-size: 18px;
+}
+/* Mobile (Mobile L) */
+@media only screen and (max-width: 500px) {
+    .container{
+        width: 100%;
+        margin: 0px;
+    }
+    header .covermobile{
+        display: block;
+        width: 100%;
+        height: auto;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 89% 91%, 50% 100%, 11% 91%, 0 100%);
+    }
+    .covercomp{
+        display: none;
+    }
+    #logo{
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .logoo{
+        display: none;
+    }
+    #nazivsajta{
+        display: none;
+    }
+    #header{
+        align-items: center;
+    }
+    #toggle{
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        color: white;
+        z-index: 1;
+    }
+    #menu{
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #00002f;
+        opacity: 0.9;
+        overflow: hidden;
+        width: 260px;
+        height: 100%;
+        transition-duration: 1s;
+        padding: 60px 20px;
+        z-index: 1;
+    }
+    #menu a{
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+    .menu{
+        position: absolute;
+        top: 0px !important;
+        left: 0px !important;
+        transition-duration: 1s;
+    }
+    nav{
+        display: none;
+    }
+
+    #pocetnitekst{
+        padding: 20px;
+        font-size: 16px;
+    }
+/* ZA JEDNO ISPOD DRUGOG
+    #muskizenski{
+        display: block;
+    }
+*/
+    #muskizenski .covercomp{
+        display: none;
+    }
+    .muski img, .zenski img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .muski img{
+        margin-right: 0%;
+    }
+    .zenski img{
+        margin-left: 0%;
+    }
+    .muski button, .zenski button{
+        top: 3px;
+        width: 80%;
+        margin: 0 10%;
+
+        padding: 10px;
+        font-size: 1.1em;
+        background-color: #00002f;
+        opacity: 0.6;
+        border-style: none;
+        border-radius: 20px;
+        color: white;
+    }
+
+    /*SOCIAL LINKS*/
+    .social-links {
+        text-align: center;
+        padding: 15px 0px;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .social-links .link {
+/*        display: inline-block;*/
+        margin: 5px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, .2);
+        height: 34px;
+        width: 34px;
+        border: 3px solid transparent;
+        transition: border 0.4s, color 0.4s;
+    }
+    .social-links .link:hover {
+        border: 3px solid blue;
+    }
+    .social-links .link a {
+        display: block;
+        padding: 10px;
+    }
+    footer{
+        background-image: url(../img/footer-m.jpg);
+    }
+    #footer{
+        width: 75%;
+        padding-left: 0px;
+    }
+    #footer a{
+        font-size: 0.96em;
+    }
+    .kategorija{
+        padding-top: 15px;
+    }
+    .zakomp{
+        display: none;
+    }
+    .copyright p{
+        font-size: 16px;
+    }
+/*Naslovi*/
+    main h1{
+        font-size: 20px;
+    }
+/*galerija strana*/
+    .galerija-strana img{
+        width: 40%;
+        cursor: zoom-in;
+    }
+}
